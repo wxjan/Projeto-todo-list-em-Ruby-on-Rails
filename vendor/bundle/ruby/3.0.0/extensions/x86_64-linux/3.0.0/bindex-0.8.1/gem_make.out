@@ -1,0 +1,18 @@
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/home/jan/.rvm/rubies/ruby-3.0.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-jpsgwq sitelibdir\=./.gem.20240515-285-jpsgwq clean
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-jpsgwq sitelibdir\=./.gem.20240515-285-jpsgwq
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-jpsgwq sitelibdir\=./.gem.20240515-285-jpsgwq install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20240515-285-jpsgwq/skiptrace/internal
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-jpsgwq sitelibdir\=./.gem.20240515-285-jpsgwq clean

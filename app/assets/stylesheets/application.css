@@ -1,0 +1,125 @@
+/* app/assets/stylesheets/application.css */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Prata&display=swap" rel="stylesheet');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    font-family: Arial, sans-serif;
+}
+
+
+.center-container {
+    text-align: none;
+    width: 50%;
+    background-color: #f9f9f9;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    color: #8E736D;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    color: #8E736D;
+    text-align: center;
+}
+
+
+.task-item {
+    display: flex;
+    margin-bottom: 10px;
+    text-align: none;
+    width: 200px;
+    padding-right: 200px;
+    align-items: center;
+
+
+}
+
+.task-info {
+    flex: 3;
+
+}
+
+.delete-button {
+    margin-top: 2px;
+    border-radius: 12px;
+    color: white;
+    border: none;
+    background-color: #BB9187;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    width: 65px;
+    font: 5px;
+
+}
+
+
+.delete-button:hover {
+    background-color: #8E736D;
+
+}
+
+.delete-button {
+    background-color: #BB9187;
+}
+
+.field {
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font: 5px;
+}
+
+
+.button-custom {
+    background-color: #BB9187;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.button-custom:hover {
+    background-color: #8E736D;
+
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: #BB9187;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: #8E736D;
+    border: 2px solid #BB9187;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    margin-left: 5px;
+    cursor: pointer;
+}

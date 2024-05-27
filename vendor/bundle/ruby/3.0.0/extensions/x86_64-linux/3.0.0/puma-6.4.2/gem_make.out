@@ -1,0 +1,51 @@
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/puma-6.4.2/ext/puma_http11
+/home/jan/.rvm/rubies/ruby-3.0.0/bin/ruby extconf.rb
+checking for BIO_read() in -llibcrypto... no
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... no
+checking for SSL_CTX_set_session_cache_mode(NULL, 0) in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... no
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... no
+checking for X509_STORE_up_ref()... no
+checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... no
+checking for SSL_CTX_set_dh_auto(NULL, 0) in openssl/ssl.h... no
+checking for SSL_get1_peer_certificate() in openssl/ssl.h... no
+checking for Random.bytes... yes
+creating Makefile
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/puma-6.4.2/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-x7qza3 sitelibdir\=./.gem.20240515-285-x7qza3 clean
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/puma-6.4.2/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-x7qza3 sitelibdir\=./.gem.20240515-285-x7qza3
+compiling http11_parser.c
+compiling mini_ssl.c
+mini_ssl.c: In function ‘sslctx_initialize’:
+mini_ssl.c:336:14: warning: implicit declaration of function ‘SSL_CTX_clear_chain_certs’; did you mean ‘SSL_CTX_clear_extra_chain_certs’? [-Wimplicit-function-declaration]
+  336 |     if (0 == SSL_CTX_clear_chain_certs(ctx)) {
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |              SSL_CTX_clear_extra_chain_certs
+mini_ssl.c:348:16: warning: implicit declaration of function ‘SSL_CTX_add0_chain_cert’; did you mean ‘SSL_CTX_add_extra_chain_cert’? [-Wimplicit-function-declaration]
+  348 |       if (0 == SSL_CTX_add0_chain_cert(ctx, ca)) {
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                SSL_CTX_add_extra_chain_cert
+mini_ssl.c:384:32: warning: implicit declaration of function ‘SSL_CTX_get0_param’; did you mean ‘SSL_CTX_set1_param’? [-Wimplicit-function-declaration]
+  384 |     X509_VERIFY_PARAM *param = SSL_CTX_get0_param(ctx);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                SSL_CTX_set1_param
+mini_ssl.c:384:32: warning: initialization of ‘X509_VERIFY_PARAM *’ {aka ‘struct X509_VERIFY_PARAM_st *’} from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+mini_ssl.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/puma-6.4.2/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-x7qza3 sitelibdir\=./.gem.20240515-285-x7qza3 install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20240515-285-x7qza3/puma
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/puma-6.4.2/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-x7qza3 sitelibdir\=./.gem.20240515-285-x7qza3 clean

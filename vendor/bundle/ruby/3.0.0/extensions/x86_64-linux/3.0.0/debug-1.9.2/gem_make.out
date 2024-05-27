@@ -1,0 +1,19 @@
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+/home/jan/.rvm/rubies/ruby-3.0.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-pg0hvs sitelibdir\=./.gem.20240515-285-pg0hvs clean
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-pg0hvs sitelibdir\=./.gem.20240515-285-pg0hvs
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-pg0hvs sitelibdir\=./.gem.20240515-285-pg0hvs install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20240515-285-pg0hvs/debug
+
+current directory: /home/jan/projeto pessoal/todo_list/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240515-285-pg0hvs sitelibdir\=./.gem.20240515-285-pg0hvs clean

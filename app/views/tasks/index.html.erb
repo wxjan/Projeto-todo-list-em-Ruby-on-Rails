@@ -1,0 +1,33 @@
+<div id="center" class="center-container">
+  <h1>My todo</h1>
+  <h3>my tasks</h3>
+  <ul>
+  <% @tasks.each do |task| %>
+      <li class="task-item">
+  <div class="task-info">
+      <%= task.name %> <%= task.due_date %>
+  </div>
+    <!-- Botão de exclusão movido para uma nova linha -->
+    <div class="actions">
+      <%= check_box_tag :completed, checked: task.completed, data: { action: "change->update-task#submit" } %>
+    </div>
+    <div class="actions">
+      <%= button_to 'Delete', task_path(task), method: :delete, data: { confirm: 'Você tem certeza?' }, class: 'delete-button' %>
+    </div>
+  </li>
+<% end %>
+
+  </ul>
+
+  <div class="actions">
+    <%= form_with(model: Task.new, local: true) do |form| %>
+      <div class="field">
+        <%= form.label :name, "new task: " %>
+        <%= form.text_field :name, placeholder: "" %>
+      </div>
+      <div class="field">
+        <%= form.submit "Add task", class: 'button-custom' %>
+      </div>
+    <% end %>
+  </div>
+</div>
